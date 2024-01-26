@@ -33,6 +33,12 @@
 					 <entry key="javascript" value="4 Months"/>
 				 </map>
 			 </property>
+			 <property name="self">
+				 <props>
+					 <prop key="name">Shadoow</prop>
+					 <prop key="hobby">pubg</prop>
+				 </props>
+			 </property>
 	   </bean>
 	
 </beans>
