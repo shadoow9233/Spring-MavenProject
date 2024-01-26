@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+       
+       <bean class="com.springcore.collections.Emp" name="emp1">
+		    <property name="name" value="Dark Shadoow" />
+		     <property name="phones" >
+				 <list>
+					 <value>0865637839</value>
+					 <value>5297364273</value>
+					 <value>097832757</value>
+				 </list>
+				 
+			 </property>
+			 <property name="address">
+				 <set>
+					 <value>kathmandu</value>
+					 <value>Pokhara</value>
+					 <value>Bhaktpur</value>
+				 </set>
+			 </property>
+			 
+			 <property name="Courses">
+				 <map>
+					 <entry key="java" value="2 Months"/>
+					 <entry key="Python" value="3 Months"/>
+					 <entry key="javascript" value="4 Months"/>
+				 </map>
+			 </property>
+	   </bean>
+	
+</beans>
