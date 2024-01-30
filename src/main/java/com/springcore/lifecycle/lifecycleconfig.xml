@@ -7,12 +7,26 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
+           
+           
+           <!-- Deafult all annotations are disable to make them enable we make-->
+          <context:annotation-config/>
     
     <bean class="com.springcore.lifecycle.Samosa" name="s1" init-method="init" destroy-method="destory">
 		<property name="price" value="20"></property>
 		
 	</bean>
 	
+	<bean class="com.springcore.lifecycle.Pepsi" name="p1" >
+		<property name="price" value="30"></property>
+	</bean>
+	
+	<bean class="com.springcore.lifecycle.Example" name="e1">
+		<property name="subject" value="Chemisytry"></property>
+		
+	</bean>
+	
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
 	
 	
 </beans>
