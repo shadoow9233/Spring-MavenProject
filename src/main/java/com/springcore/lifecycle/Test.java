@@ -16,7 +16,10 @@ public class Test {
         /* to call a destory method we enable  a pre shutdown hook */
         ((AbstractApplicationContext) context).registerShutdownHook();
         
-
+        
+        System.out.println("*******************************************");
+        Pepsi p=(Pepsi) context.getBean("p1");
+        System.out.println(p);
 		
 
 	}
