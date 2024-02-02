@@ -9,9 +9,16 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean class="com.springcore.auto.wired.Address" name="address">
+        <property name="street"><value>Sanfe bagar</value></property>
+        <property name="city"><value>Achham</value></property>
+    </bean>
+
+<!-- 
+    <bean class="com.springcore.auto.wired.Address" name="address1">
         <property name="street"><value>Sukhedhara</value></property>
         <property name="city"><value>Kathmandu</value></property>
     </bean>
+    -->
 
-    <bean class="com.springcore.auto.wired.Emp" name="emp1" autowire="byName"/>
+    <bean class="com.springcore.auto.wired.Emp" name="emp1" autowire="constructor"/>
 </beans>

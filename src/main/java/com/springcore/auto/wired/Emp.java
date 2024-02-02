@@ -20,6 +20,7 @@ public class Emp {
 	public Emp(Address address) {
 		super();
 		this.address = address;
+		System.out.println("Inside constructor");
 	}
 
 	@Override
