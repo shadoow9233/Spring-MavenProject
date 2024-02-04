@@ -1,9 +1,11 @@
 package com.springcore.auto.wired.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
-	//@Autowired
+	@Autowired
+	@Qualifier("tmp2")
 
 	private Address address;
 
@@ -24,7 +26,7 @@ public class Emp {
 		// TODO Auto-generated constructor stub
 	}
 	//auto wired used by constructor annotations
-	@Autowired
+	//@Autowired
 	public Emp(Address address) {
 		super();
 		this.address = address;

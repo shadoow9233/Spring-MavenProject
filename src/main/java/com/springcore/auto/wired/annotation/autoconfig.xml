@@ -9,19 +9,20 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
            
            
-        <context:annotation-config/>
 
-    <bean class="com.springcore.auto.wired.annotation.Address" name="address">
-        <property name="street"><value>Sanfe bagar</value></property>
-        <property name="city"><value>Achham</value></property>
-    </bean>
-
-<!-- 
-    <bean class="com.springcore.auto.wired.Address" name="address1">
-        <property name="street"><value>Sukhedhara</value></property>
-        <property name="city"><value>Kathmandu</value></property>
+    <context:annotation-config/>
+   
+   <!-- 
+    <bean class="com.springcore.auto.wired.annotation.Address" id="address">
+        <property name="street" value="Sanfe bagar"/>
+        <property name="city" value="Achham"/>
     </bean>
     -->
 
-    <bean class="com.springcore.auto.wired.annotation.Emp" name="emp1" />
+    <bean class="com.springcore.auto.wired.annotation.Address" id="tmp2">
+        <property name="street" value="Sukhedhara"/>
+        <property name="city" value="Kathmandu"/>
+    </bean>
+
+    <bean class="com.springcore.auto.wired.annotation.Emp" id="emp2" />
 </beans>
