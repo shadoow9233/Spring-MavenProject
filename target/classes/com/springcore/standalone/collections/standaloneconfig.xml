@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+           
+    <!-- Define a util:list bean -->
+    <util:list id="myList" list-class="java.util.LinkedList">
+       <value>Maicha</value>
+       <value>Menuka</value>
+       <value>Anzy</value>
+       <value>Snake</value>
+    </util:list>
+    
+    <!-- Define a util:map bean -->
+    <util:map map-class="java.util.HashMap" id="fees">
+		<entry key="Spring" value="80000" />
+		<entry key="Java" value="90000" />
+		<entry key="Spring boot" value="10000" />
+	</util:map>
+
+    <!-- Define a Person bean -->
+    <bean id="person" class="com.springcore.standalone.collections.Person">
+        <property name="friends" ref="myList"/>
+    </bean>
+    
+    <bean id="person2" class="com.springcore.standalone.collections.Person">
+        <property name="friends" ref="myList"/>
+        <property name="feestructure" ref="fees"/>
+    </bean>
+
+</beans>
